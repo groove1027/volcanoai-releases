@@ -1,0 +1,61 @@
+{
+  "manifest_version": 3,
+  "name": "Volcano Cookie Sync",
+  "version": "0.1.0",
+  "description": "Google 쿠키를 Volcano 앱으로 자동 동기화 — 무료 이미지 레퍼런스 검색 봇 차단 영구 회피.",
+  "author": "powerstudio.co.kr",
+  "permissions": [
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "http://127.0.0.1:9876/*",
+    "http://127.0.0.1:9877/*",
+    "http://127.0.0.1:9878/*",
+    "http://127.0.0.1:9882/*",
+    "http://127.0.0.1:9883/*",
+    "http://127.0.0.1:9884/*",
+    "http://127.0.0.1:9885/*",
+    "http://127.0.0.1:9886/*",
+    "http://127.0.0.1:9887/*",
+    "http://127.0.0.1:9888/*",
+    "http://127.0.0.1:9889/*",
+    "http://127.0.0.1:9890/*",
+    "http://127.0.0.1:9891/*",
+    "http://127.0.0.1:9892/*",
+    "http://127.0.0.1:9893/*",
+    "http://127.0.0.1:9894/*",
+    "http://127.0.0.1:9895/*",
+    "http://127.0.0.1:9896/*",
+    "http://127.0.0.1:9897/*",
+    "http://127.0.0.1:9898/*",
+    "http://localhost:9876/*",
+    "http://localhost:9877/*",
+    "http://localhost:9878/*",
+    "http://localhost:9882/*",
+    "http://localhost:9883/*",
+    "http://localhost:9884/*",
+    "http://localhost:9885/*",
+    "http://localhost:9886/*",
+    "http://localhost:9887/*",
+    "http://localhost:9888/*",
+    "http://localhost:9889/*",
+    "http://localhost:9890/*",
+    "http://localhost:9891/*",
+    "http://localhost:9892/*",
+    "http://localhost:9893/*",
+    "http://localhost:9894/*",
+    "http://localhost:9895/*",
+    "http://localhost:9896/*",
+    "http://localhost:9897/*",
+    "http://localhost:9898/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Volcano 쿠키 동기화"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}

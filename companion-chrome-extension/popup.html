@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Volcano 쿠키 동기화</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Apple SD Gothic Neo",
+          system-ui, sans-serif;
+        margin: 0;
+        padding: 16px;
+        width: 320px;
+        background: #1a1a1a;
+        color: #f0f0f0;
+      }
+      h1 {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 0 4px 0;
+        color: #ff6b35;
+      }
+      .subtitle {
+        font-size: 11px;
+        color: #999;
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+      button {
+        width: 100%;
+        padding: 10px 12px;
+        background: #ff6b35;
+        color: #000;
+        border: none;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 13px;
+        cursor: pointer;
+        transition: opacity 120ms;
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+      button:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      #status {
+        margin-top: 12px;
+        padding: 8px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 1.4;
+        min-height: 16px;
+      }
+      .status-ok {
+        background: #1f3a1f;
+        color: #88ff88;
+        border: 1px solid #2d5c2d;
+      }
+      .status-err {
+        background: #3a1f1f;
+        color: #ff8888;
+        border: 1px solid #5c2d2d;
+      }
+      .status-info {
+        background: #1f2a3a;
+        color: #88aaff;
+        border: 1px solid #2d3f5c;
+      }
+      ol {
+        font-size: 11px;
+        color: #aaa;
+        margin: 12px 0 0 0;
+        padding-left: 16px;
+        line-height: 1.6;
+      }
+      ol li {
+        margin-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌋 Volcano 쿠키 동기화</h1>
+    <p class="subtitle">
+      Google 쿠키를 Volcano 앱으로 1초 만에 동기화. 무료 이미지 레퍼런스 검색 봇 차단 영구 회피.
+    </p>
+    <button id="syncBtn" type="button">📤 Volcano 에 쿠키 동기화</button>
+    <div id="status"></div>
+    <ol>
+      <li>Google 에 로그인된 상태에서 본 버튼 클릭</li>
+      <li>Volcano 앱이 가동 중이어야 함 (메뉴바에 🌋)</li>
+      <li>완료되면 Volcano 의 [API 설정] 에서 ✅ 쿠키 연결됨 확인</li>
+    </ol>
+    <script src="popup.js"></script>
+  </body>
+</html>
