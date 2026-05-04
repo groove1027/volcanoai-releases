@@ -1,6 +1,6 @@
 # Volcano Cookie Sync — Chrome Extension
 
-Volcano 앱 의 **무료 이미지 레퍼런스 검색** 봇 차단 회피용 Google cookie 1초 자동 동기화.
+Volcano 앱 으로 Google cookie 1초 자동 동기화.
 
 ## 왜 이게 필요한가
 
